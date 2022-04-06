@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCustomDice"
+        android:layout_width="361dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="533dp"
+        android:ems="10"
+        android:hint="Enter number of sides for your custom dice, Eg: 7"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDiceType"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="593dp"
+        android:checkedButton="@+id/rBtn4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/rBtn4"
+            style="@style/radioStyle"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/rBtn6"
+            style="@style/radioStyle"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/rBtn8"
+            style="@style/radioStyle"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/rBtn10"
+            style="@style/radioStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/rBtn12"
+            style="@style/radioStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="12" />
+
+        <RadioButton
+            android:id="@+id/rBtn20"
+            style="@style/radioStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="20" />
+
+        <RadioButton
+            android:id="@+id/rBtn10x"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="10x" />
+
+        <RadioButton
+            android:id="@+id/rBtnCustom"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="New" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="678dp"
+        android:text="Select Dice Type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNumDice"
+        android:layout_width="195dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="409dp"
+        android:checkedButton="@+id/radioBtnOneDice"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radioBtnOneDice"
+            style="@style/radioStyle"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/radioBtnTwoDice"
+            style="@style/radioStyle"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="484dp"
+        android:text="How many dices do you want to roll?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRollDice"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="322dp"
+        android:text="Roll Dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRollRes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="230dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDice2Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="230dp"
+        android:text="Dice 2: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDice1Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="230dp"
+        android:text="Dice 1: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRollRes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="230dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrvRolls"
+        android:layout_width="236dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="55dp"
+        android:text="5, 7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrvRollLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="154dp"
+        android:text="Previous Rolls: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
