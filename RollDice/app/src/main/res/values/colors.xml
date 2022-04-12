@@ -11,9 +11,6 @@
     <color name="primaryColorDark">#1c1c1b</color>
     <color name="primaryLightColorDark">#434342</color>
     <color name="primaryDarkColorDark">#000000</color>
-    <color name="secondaryColorDark">#ce4a7e</color>
-    <color name="secondaryLightColorDark">#ff7cad</color>
-    <color name="secondaryDarkColorDark">#990d52</color>
     <color name="primaryTextColorDark">#ffffff</color>
     <color name="secondaryTextColorDark">#000000</color>
 </resources>

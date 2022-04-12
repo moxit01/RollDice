@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 edTxtCustom.setVisibility(View.INVISIBLE);
                 numofSides=100;
                 break;
+                //Custom Dice Rolls
             case R.id.rBtnCustom:
                 edTxtCustom.setVisibility(View.VISIBLE);
                 if(edTxtCustom.getVisibility()==View.VISIBLE){
@@ -138,6 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //Dice 1 Rolls
     public int roll1(int numSides, boolean flag10x){
 
 
@@ -161,6 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return sideUp;
     }
 
+    //Dice 2 Rolls
     public int roll2(int numSides, boolean flag10x){
 
         diceResult2 = findViewById(R.id.tvRollRes2);
